@@ -51,6 +51,25 @@ const Recommended = () => {
     text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam adipisci recusandae doloremque exercitationem ',
     sales: "free"
   }])
+     const [option, setoption] = useState( {
+
+      0: {
+      
+      items: 1
+      
+      },
+      
+      450: {
+      items: 1
+      },
+      600: {
+      items: 2
+      },
+      1000: {
+      items:3
+      }
+      
+      })
   return (
     <section className="py-5" style={bg}>
       <div className="container  py-5" >
@@ -58,8 +77,8 @@ const Recommended = () => {
           <h2 className="text-center mb-5 text-light"> Recommended Courses</h2>
         </header>
 
-        <div className="owl-slider">
-          <OwlCarousel className='owl-theme owl-slider' autoplay loop margin={10} >
+        <div >
+          <OwlCarousel className='owl-theme owl-slider'responsive={option} autoplay loop margin={10} >
             {state.map(item =>
               <div className='item' key={item.id}>
                  <Link  to={ROUTES.BROWSE} style={{ textDecoration: 'none'}}>
@@ -77,22 +96,7 @@ const Recommended = () => {
             )}
           </OwlCarousel>
         </div>
-        <div className="owl-media">
-          {state.map(course =>
-            <div className="col-11 mx-auto py-4" key={course.id}>
-              <Link  to={ROUTES.BROWSE} style={{ textDecoration: 'none'}}>
-              <Card>
-                <CardImg top width="100%" src={course.src} alt="Card image cap" />
-                <CardBody>
-                  <CardTitle tag="h5">{course.title}</CardTitle>
-                  <CardText>{course.text}</CardText>
-                  <CardSubtitle tag="h6" className="mb-2 text-uppercase font-weight-bold" style={free}>{course.sales}</CardSubtitle>
-                </CardBody>
-              </Card>
-              </Link>
-            </div>
-          )}
-        </div>
+       
       </div>
     </section>
 
