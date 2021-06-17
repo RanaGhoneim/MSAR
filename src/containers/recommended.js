@@ -16,10 +16,6 @@ import {
 
 const free = { color: "#FD4255" }
 
-const bg = {
-  background:"inear-gradient(#4483fec7,#007bff45 )"
-}
-
 const Recommended = () => {
   const [state, setstate] = useState([{
 
@@ -70,7 +66,7 @@ const Recommended = () => {
       
       })
   return (
-    <section className="py-5" style={bg}>
+    <section className="py-5 Carousel" >
       <div className="container  py-5" >
         <header>
           <h2 className="text-center mb-5 text-light"> Recommended Courses</h2>
