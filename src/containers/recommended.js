@@ -17,7 +17,7 @@ import {
 const free = { color: "#FD4255" }
 
 const bg = {
-  background: "linear-gradient(#4483fec7,#007bff45),url(https://pic.i7lm.com/wp-content/uploads/2019/05/pexels-photo-621720.jpeg) fixed no-repeat ",
+  background:"inear-gradient(#4483fec7,#007bff45 ),url(https://pic.i7lm.com/wp-content/uploads/2019/05/pexels-photo-621720.jpeg) fixed no-repeat ",
   backgroundSize: "cover"
 }
 
@@ -78,7 +78,7 @@ const Recommended = () => {
         </header>
 
         <div >
-          <OwlCarousel className='owl-theme owl-slider'responsive={option} autoplay loop margin={10} >
+          <OwlCarousel className='owl-theme owl-slider'responsive={option} autoplay nav loop margin={10} >
             {state.map(item =>
               <div className='item' key={item.id}>
                  <Link  to={ROUTES.BROWSE} style={{ textDecoration: 'none'}}>
