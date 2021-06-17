@@ -78,7 +78,7 @@ const Recommended = () => {
         </header>
 
         <div >
-          <OwlCarousel className='owl-theme owl-slider'responsive={option} autoplay nav loop margin={10} >
+          <OwlCarousel className='owl-theme owl-slider'responsive={option} autoplay  loop margin={10} >
             {state.map(item =>
               <div className='item' key={item.id}>
                  <Link  to={ROUTES.BROWSE} style={{ textDecoration: 'none'}}>
