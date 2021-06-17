@@ -17,8 +17,7 @@ import {
 const free = { color: "#FD4255" }
 
 const bg = {
-  background:"inear-gradient(#4483fec7,#007bff45 )",
-  backgroundSize: "cover"
+  background:"inear-gradient(#4483fec7,#007bff45 )"
 }
 
 const Recommended = () => {
