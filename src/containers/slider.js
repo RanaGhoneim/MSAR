@@ -27,7 +27,7 @@ const Slider = () => {
             alt="Second slide"
             style={{}}
           />
-          <Carousel.Caption className="Carousel" style={{ bottom: "100px" }}>
+          <Carousel.Caption  style={{ bottom: "100px" }}>
             <h1  className="title-h1" >   
               <span> MSAR </span> <br /> Learning
             </h1>
@@ -39,7 +39,7 @@ const Slider = () => {
             src="https://demo.createdbycocoon.com/moodle/edumy/6/pluginfile.php/371/block_cocoon_slider_2/slides/1/h1.jpg"
             alt="Third slide"
           />
-         <Carousel.Caption className="Carousel" style={{ bottom: "100px" }}>
+         <Carousel.Caption  style={{ bottom: "100px" }}>
             <h1 className="title-h1">         
               <span> MSAR </span> <br /> Learning
             </h1>
